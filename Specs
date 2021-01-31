@@ -1,0 +1,15 @@
+Bluetooth Module (HC-05)
+
+	I>Specs:
+  -Operating Voltage: 3.3V ( can connect to a 5V supply since there is a 3.3V regulator internally, but this s not recommended since the logic of HC05 serial comm pins is 3.3V)
+  -Max range: 100m
+  -Communication: Serial comm
+	-Baudrate: 38400 by default
+II>Pins info and connections
+	+VCC: 3.3V or  5V from the Arduino
+	+GND
+  +TXD: transmit pin, which outputs 3.3V, is connected to RXD pin of the Arduino. 3.3V   is interpreted as logic HIGH by the Arduino.
+  +RXD: receive pin_ received data from the Arduino TXD pin which outputs 5V---> need to set up a voltage divider to reduce the voltage to 3.3, which is the operating voltage of the module 
+	+State: module status, either connected or disconnected
+
+
