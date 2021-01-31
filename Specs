@@ -9,7 +9,7 @@ I>Specs:
 II>Pins info and connections
 +VCC: 3.3V or  5V from the Arduino
 +GND
-+TXD: transmit pin, which outputs 3.3V, is connected to RXD pin of the Arduino. 3.3V   is interpreted as logic HIGH by the Arduino.
++TXD: transmit pin, which outputs 3.3V, is connected to RXD pin of the Arduino. 3.3V is interpreted as logic HIGH by the Arduino.
 +RXD: receive pin_ received data from the Arduino TXD pin which outputs 5V---> need to set up a voltage divider to reduce the voltage to 3.3, which is the operating voltage of the module 
 +State: module status, either connected or disconnected
 
